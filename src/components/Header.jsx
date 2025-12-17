@@ -1,10 +1,12 @@
 
-const Header = () =>{
-    
+const Header = ({ setIsShowMenu }) =>{
+    const handleClick = () =>{
+        setIsShowMenu(prev => !prev);
+    }
     return (
         <div className="flex shadow-lg h-12 items-center py-3">
             <div className="w-1/24">
-            <img className="ml-3 h-6 m-0.5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWZCzgqnZxPhuFIcoKaatzy6sAMDuF-bXkkQ&s" />
+            <img className="ml-3 h-6 m-0.5 cursor-pointer" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWZCzgqnZxPhuFIcoKaatzy6sAMDuF-bXkkQ&s" onClick={handleClick} />
             </div>
             <div className="w-3/24">
                 <img className="h-7 my-0.5" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/2560px-YouTube_Logo_2017.svg.png" />

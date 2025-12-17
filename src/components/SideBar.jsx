@@ -6,7 +6,7 @@ const SideBar = () => {
     "border-b border-gray-300 mb-5 pb-5 flex flex-col items-center gap-1.5";
 
   return (
-    <div className="font-normal w-1/8 flex flex-col mt-[2px] pt-6 bg-gray-50 pl-5 text-lg">
+    <div className="font-normal w-1/8 flex flex-col mt-[1px] pt-6 bg-gray-50 pl-5 text-lg">
       
       <div className={sectionClass}>
         <p className={itemClass}>Home</p>
