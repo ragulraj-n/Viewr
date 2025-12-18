@@ -3,6 +3,7 @@ const Header = ({ setIsShowMenu }) =>{
     const handleClick = () =>{
         setIsShowMenu(prev => !prev);
     }
+    
     return (
         <div className="flex shadow-lg h-12 items-center py-3">
             <div className="w-1/24">
