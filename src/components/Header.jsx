@@ -5,7 +5,7 @@ const Header = ({ setIsShowMenu }) =>{
     }
     
     return (
-        <div className="flex shadow-lg h-12 items-center py-3">
+        <div className="flex shadow-lg h-12 items-center py-3 sticky top-0 bg-white">
             <div className="w-1/24">
             <img className="ml-3 h-6 m-0.5 cursor-pointer" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWZCzgqnZxPhuFIcoKaatzy6sAMDuF-bXkkQ&s" onClick={handleClick} />
             </div>

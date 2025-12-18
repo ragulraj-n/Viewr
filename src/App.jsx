@@ -10,8 +10,11 @@ const App = () =>{
   return (
   <div className="m-1">
       <Header setIsShowMenu={setIsShowMenu}/>
-     {isShowMenu && <SideBar />} 
-     <VideoContainer />
+      <div className="flex gap-5">
+        {isShowMenu && <SideBar />} 
+       <VideoContainer />
+      </div>
+  
   </div>)
 }
 
