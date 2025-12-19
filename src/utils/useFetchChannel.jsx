@@ -5,6 +5,7 @@ const useFetchChannel = (channelId) => {
     const [channelData , setChannelData] = useState(null);
 
     const fetchData = async () =>{
+        if(!channelId) return;
         const data = await fetch(`${CHANNEL_URL}${channelId}${ACCESS_API}` );
         const json = await data.json();
         setChannelData(json?.items[0]);
@@ -12,8 +13,7 @@ const useFetchChannel = (channelId) => {
 
     useEffect(()=>{
         fetchData();
-    },[])
-
+    },[channelId]);
     return channelData;
 }
 

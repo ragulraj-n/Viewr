@@ -11,7 +11,7 @@ const App = () =>{
   const [isShowMenu, setIsShowMenu] = useState(false);
   return (
    <BrowserRouter>
-      <div className="m-1">
+      <div className="m-1 mb-10">
         <Header setIsShowMenu={setIsShowMenu} />
 
         <div className="flex gap-5">
