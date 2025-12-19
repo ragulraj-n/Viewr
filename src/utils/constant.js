@@ -1,4 +1,4 @@
-export const ACCESS_API = import.meta.env.VITE_YOUTUBE_API;
+export const ACCESS_API = import.meta.env.VITE_ACCESS_API;
 
 export const CHANNEL_URL = import.meta.env.VITE_CHANNEL_URL;
 
