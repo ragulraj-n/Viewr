@@ -1,3 +1,5 @@
-export const ACCESS_API = "AIzaSyA_HWTemAlGjan-Ec35fFRas6Pf143OpOA";
+export const ACCESS_API = import.meta.env.VITE_YOUTUBE_API;
 
-export const CHANNEL_URL = "https://youtube.googleapis.com/youtube/v3/channels?part=snippet%2CcontentDetails%2Cstatistics&id=";
+export const CHANNEL_URL = import.meta.env.VITE_CHANNEL_URL;
+
+export const VIDEO_URL = import.meta.env.VITE_VIDEO_URL;

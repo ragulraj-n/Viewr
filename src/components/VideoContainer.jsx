@@ -1,5 +1,6 @@
 import { useState , useEffect } from "react";
 import VideoCart from "./VideoCart";
+import { VIDEO_URL } from "../utils/constant";
 
 const VideoContainer = () => {
 
@@ -10,7 +11,7 @@ const VideoContainer = () => {
     },[]);
 
 const fetchData = async () =>{
-    const data = await fetch(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=IN&maxResults=2&key=${import.meta.env.VITE_YOUTUBE_API}`);
+    const data = await fetch(`${VIDEO_URL}${import.meta.env.VITE_YOUTUBE_API}`);
     const json = await data.json();
     setvideoData(json.items);
     console.log(json);
