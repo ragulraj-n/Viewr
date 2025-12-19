@@ -12,8 +12,6 @@ const VideoContainer = () => {
 const fetchData = async () =>{
     const data = await fetch(`${VIDEO_URL}${ACCESS_API}`);
     const json = await data.json();
-    console.log("Video Container : ")
-    console.log(json.items);
     setvideoData(json.items);
 }
 
